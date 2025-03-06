@@ -1,303 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPIE Research - Patient and Public Involvement and Engagement in Research</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-            padding-bottom: 50px;
-        }
-        
-        .header {
-            background-color: #004aad;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .nav {
-            background-color: #003380;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-        }
-        
-        .nav li {
-            margin: 0 15px;
-        }
-        
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-        
-        .nav a:hover {
-            color: #a7c7ff;
-        }
-        
-        section {
-            margin: 40px 0;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1, h2, h3 {
-            color: #004aad;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            margin: 1.5rem 0 1rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        ul, ol {
-            margin-left: 20px;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #004aad;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-        
-        .cta-button:hover {
-            background-color: #003380;
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-4 {
-            margin-top: 2rem;
-        }
-        
-        .university-info {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .university-info p {
-            margin-bottom: 0.3rem;
-        }
-        
-        /* Form section styling */
-        .form-section {
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin: 40px 0;
-        }
-        
-        .form-container {
-            height: 800px; /* Adjust height as needed for your Tally form */
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        
-        /* Responsive iframe */
-        .responsive-iframe {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        
-        .responsive-iframe iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .nav li {
-                margin: 8px 0;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.6rem;
-            }
-            
-            .form-container {
-                height: 900px; /* Slightly taller on mobile */
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Shape a Weight Management Intervention for Black Communities</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .poster {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .header {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  .header h1 {
+    color: #6a1b9a;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .header h2 {
+    color: #4a148c;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .section {
+    margin-bottom: 25px;
+  }
+  .section-title {
+    color: #6a1b9a;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .benefit-item span {
+    margin-right: 10px;
+    color: #4a148c;
+  }
+  .contact {
+    background: #f3e5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  .contact-title {
+    color: #6a1b9a;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .contact-info {
+    margin-bottom: 8px;
+  }
+  .emphasis {
+    color: #4a148c;
+    font-weight: bold;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #6a1b9a;
+  }
+  .bold-text {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Form container styles */
+  .form-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    height: 800px; /* Adjust height as needed for your form */
+  }
+  
+  .form-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  
+  .form-info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Institution info */
+  .institution {
+    text-align: center;
+    margin-top: 15px;
+    color: #4a148c;
+    font-size: 14px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .poster {
+      padding: 20px;
+    }
+    
+    .header h1 {
+      font-size: 28px;
+    }
+    
+    .header h2 {
+      font-size: 20px;
+    }
+    
+    .form-container {
+      height: 900px; /* Taller on mobile */
+    }
+  }
+</style>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <h1>Patient and Public Involvement and Engagement in Research</h1>
-            <p>Help shape the future of healthcare research</p>
-            <div class="university-info">
-                <p><strong>Kings College London, Nutritional Sciences</strong></p>
-                <p>Life Sciences & Medicine</p>
-                <p>Life Course & Population Sciences</p>
-            </div>
-        </div>
+<div class="poster">
+  <div class="header">
+    <h1>Help Shape a Weight Management Intervention for Black Communities</h1>
+    <h2>Are you of Black African or Caribbean heritage?</h2>
+    <div class="institution">
+      Kings College London, Nutritional Sciences<br>
+      Life Sciences & Medicine<br>
+      Life Course & Population Sciences
     </div>
-    
-    <nav class="nav">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#why-participate">Why Participate</a></li>
-                <li><a href="#what-involved">What's Involved</a></li>
-                <li><a href="#join-us">Join Us</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <div class="container">
-        <section id="about">
-            <h2>About the Research</h2>
-            <p>Our research team at Kings College London, Department of Nutritional Sciences, is conducting a study on Patient and Public Involvement and Engagement (PPIE) in healthcare research. We believe that involving patients and the public in research design and implementation leads to better outcomes and more relevant findings.</p>
-            <p>This project aims to understand how patient perspectives can be better integrated into clinical research protocols, ultimately improving healthcare delivery and patient experiences.</p>
-        </section>
-        
-        <section id="why-participate">
-            <h2>Why Your Participation Matters</h2>
-            <p>By participating in this research, you will:</p>
-            <ul>
-                <li>Help researchers understand real patient experiences</li>
-                <li>Contribute to improving healthcare services</li>
-                <li>Ensure research addresses priorities that matter to patients</li>
-                <li>Have your voice heard in the development of new healthcare approaches</li>
-                <li>Learn about the research process and gain new skills</li>
-            </ul>
-            <p>We're looking for people from all backgrounds and experiences. You don't need any prior knowledge about research to participate.</p>
-        </section>
-        
-        <section id="what-involved">
-            <h2>What's Involved</h2>
-            <p>Participation may include:</p>
-            <ul>
-                <li>Attending online or in-person discussion groups (approximately 1-2 hours)</li>
-                <li>Reviewing research materials and providing feedback</li>
-                <li>Completing short surveys about your experiences</li>
-                <li>Participating in interviews with researchers</li>
-            </ul>
-            <p>All activities will be scheduled at convenient times, and we offer compensation for your time and expertise.</p>
-        </section>
-        
-        <!-- Form Section - Embedded Tally Form -->
-        <section id="join-us" class="form-section">
-            <h2>Join Our Research</h2>
-            <p class="text-center">If you're interested in participating or would like more information, please fill out the form below:</p>
-            
-            <div class="form-container">
-                <div class="responsive-iframe">
-                    <iframe 
-                        src="https://tally.so/embed/nPkzj5?alignLeft=1&hideTitle=1&transparentBackground=1" 
-                        width="100%" 
-                        height="100%" 
-                        frameborder="0"
-                        title="PPIE Research Interest Form">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Contact Us</h2>
-            <p class="text-center">If you have any questions or need assistance, please contact:</p>
-            <p class="text-center">
-                <strong>Queen Anoma</strong><br>
-                Research Associate Department of Nutritional Sciences<br>
-                Life Sciences & Medicine<br>
-                Life Course & Population Sciences<br>
-                Email: k2478101@kcl.ac.uk<br>
-                Phone: 07538179217
-            </p>
-        </section>
-    </div>
-    
-    <footer style="background-color: #004aad; color: white; text-align: center; padding: 20px 0; margin-top: 40px;">
-        <div class="container">
-            <p>&copy; 2025 Kings College London, Department of Nutritional Sciences. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <!-- Smooth scrolling for navigation -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+  </div>
+
+  <div class="section">
+    <p>Are you on a journey toward better health and wellness or supporting someone who is? <span class="emphasis">Your voice matters!</span></p>
+    <p>I am a PhD researcher at King's College London interested in co-creating an intervention to improve weight management outcomes for Black communities in South London. Your insights and experiences are essential to ensure this intervention is culturally relevant, accessible, and effective.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Why Get Involved?</div>
+    <div class="benefit-item"><span>✔</span> <strong>Make a difference</strong> – Help create an intervention that truly meets the needs of Black communities.</div>
+    <div class="benefit-item"><span>✔</span> <strong>Share your insights</strong> – Your perspectives will shape the design, accessibility, and effectiveness of the study.</div>
+    <div class="benefit-item"><span>✔</span> <strong>Empower your community</strong> – Build trust, address health disparities, and influence real change.</div>
+    <div class="benefit-item"><span>✔</span> <strong>Be part of the process</strong> – Co-develop study materials, refine recruitment strategies, and help share findings.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Who Can Join?</div>
+    <div class="benefit-item bold-text">Individuals of Black African or Caribbean heritage interested in health and wellness</div>
+    <div class="benefit-item">👨‍👩‍👦 Family members, carers (paid or unpaid) supporting loved ones.</div>
+    <div class="benefit-item">🏥 Community leaders, patient advocates, and local health professionals.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">What Will You Do?</div>
+    <div class="benefit-item">💡 Advise on cultural needs and potential barriers.</div>
+    <div class="benefit-item">🗣️ Participate in discussions, workshops, and feedback sessions.</div>
+    <div class="benefit-item">📝 Help refine study methods, recruitment, and messaging.</div>
+    <div class="benefit-item">📢 Co-develop materials and share findings within the community.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Important Details</div>
+    <div class="benefit-item">📅 <strong>How Often:</strong> Once a month between April to July – Join virtual or in-person meetings based on group preference.</div>
+    <div class="benefit-item">💰 <strong>Compensation:</strong> Paid at £25 per hour + £5 for online meetings (NIHR rate).</div>
+    <div class="benefit-item">📍 <strong>Where:</strong> Community spaces, local organisations, and online – Flexible and accessible!</div>
+  </div>
+
+  <!-- Tally Form Section -->
+  <div class="form-title">Register Your Interest Now</div>
+  <div class="form-info">Complete the form below to join our research team or learn more:</div>
+  <div class="form-container">
+    <iframe 
+      class="form-iframe"
+      src="https://tally.so/embed/nPkzj5?alignLeft=1&hideTitle=1&transparentBackground=1" 
+      frameborder="0"
+      title="Research Interest Form">
+    </iframe>
+  </div>
+
+  <div class="contact">
+    <div class="contact-title">Have Questions?</div>
+    <div class="contact-info">📩 Contact: <strong>Queen Anoma</strong></div>
+    <div class="contact-info">📧 Email: <strong>k2478101@kcl.ac.uk</strong></div>
+    <div class="contact-info">📞 Call/WhatsApp: <strong>07538179217</strong></div>
+  </div>
+
+  <div class="footer">
+    Let's work together to create an intervention that truly represents and benefits our community!
+  </div>
+</div>
 </body>
 </html>
